@@ -1,0 +1,1 @@
+print('Su ganacia es : $',int(input('Cual es el monto a invertir: $'))*0.02)
