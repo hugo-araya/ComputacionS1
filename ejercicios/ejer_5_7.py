@@ -6,9 +6,10 @@ def lista_de_primos(n):
     primos = [1, 2, 3]
     i = 4
     while i <= n:
+        print(i)
         di = 2
         ok = False
-        while di < i:
+        while di < i//2 and ok!=True:
             if (i % di) == 0:
                 ok = True
             di = di + 1
@@ -21,3 +22,4 @@ if __name__ == '__main__':
     n = int(input('Numero n: '))
     primos = lista_de_primos(n)
     print(primos)
+    print(len(primos))
